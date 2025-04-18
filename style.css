@@ -1,0 +1,63 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16pt;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  line-height: 1.75;
+  background-color: pink;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section img {
+  max-width: 100%;
+  max-height: 600px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.fullpage {
+  min-height: 100%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fullpage h1, .fullpage h2 {
+  color: white;
+  font-weight: lighter;
+}
+
+.fullpage h1 {
+  font-size: 4rem;
+}
+
+.fullpage h2 {
+  font-size: 3rem;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 0, 255, 0.5)), url('images/san-diego.jpg');
+  background-position: center;
+}
+
+footer {
+  background-image: linear-gradient(rgba(255, 0, 255, 0.5), rgba(0, 0, 0, 0.25)), url('images/beach.jpg');
+  background-position: center;
+}
