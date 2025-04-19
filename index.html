@@ -20,6 +20,7 @@
     <p>The time: <strong>May 17, 4:30pm</strong>.</p>
     <p>The place: <strong>our house</strong>.</p>
     <p>The theme: <strong>Taylor Swift</strong>. Dress sparkly!</p>
+    <iframe id="rsvp" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     <img src="images/superstar.jpg" />
   </div>
 </section>
@@ -28,5 +29,19 @@
   <h2>Let's party!</h2>
 </footer>
 
+<script>
+  const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfqHndM8BPWl6evnp39dWTnTwUMh_CN2mMBvrb8dlepxmcEnQ/viewform"
+  const formParams = new URLSearchParams("embedded=true");
+  const queryParams = new URLSearchParams(window.location.search);
+  const who = queryParams.get("who");
+  const howmany = queryParams.get("howmany");
+  if (who) {
+    formParams.append("entry.1071018635", who);
+  }
+  if (howmany) {
+    formParams.append("entry.1498135098", howmany);
+  }
+  document.getElementById("rsvp").src = `${formUrl}?${formParams.toString()}`;
+</script>
 </body>
 </html>
