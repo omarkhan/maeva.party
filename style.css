@@ -52,6 +52,11 @@ section img {
   font-size: 3rem;
 }
 
+.big {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 0, 255, 0.5)), url('images/san-diego.jpg');
   background-position: center;
